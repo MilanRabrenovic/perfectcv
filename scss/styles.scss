@@ -1,8 +1,13 @@
 @import "base";
 @import "layout/normalize";
 @import "partials/variables";
+@import "partials/mixins";
 @import "layout/typography";
 @import "layout/layout";
 
+@import "partials/bootstrap/bootstrap";
 
+@import "partials/global";
+@import "partials/header";
+@import "partials/buttons";
 @import "pages/home";

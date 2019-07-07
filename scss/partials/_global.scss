@@ -1,0 +1,57 @@
+body {
+    color: $text-dark-color;
+    line-height: 1.5;
+    font-size: rem(16);
+    font-family: $primary-font-400, sans-serif;
+}
+
+a {
+    @include prefixer(transition, all 0.2s ease-in-out, ('moz', 'webkit'));
+}
+
+.slanted-full--light {
+    background: $light-bg;
+    @include angled-edge("outside top", "upper left", $light-bg);
+    @include angled-edge("outside bottom", "lower right", $light-bg);
+    border-top: 1px solid $light-bg;
+    &:before {
+        height: get-vw(240px);
+        top: get-vw(-240px);
+    }
+    &:after {
+        height: get-vw(240px);
+        bottom: get-vw(-240px);
+    }
+}
+
+.slanted-full--dark {
+    background: $dark-bg;
+    @include angled-edge("outside top", "upper left", $dark-bg);
+    @include angled-edge("outside bottom", "lower right", $dark-bg);
+    border-top: 1px solid $dark-bg;
+    &:before {
+        height: get-vw(240px);
+        top: get-vw(-240px);
+    }
+    &:after {
+        height: get-vw(240px);
+        bottom: get-vw(-240px);
+    }
+    .section-title {
+        color: $text-light-color;
+    }
+
+}
+
+.section-header {
+    margin-bottom: rem(50);
+    &--center {
+        text-align: center;
+    }
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: rem(60);
+    font-family: $primary-font-300;
+}

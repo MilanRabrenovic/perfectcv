@@ -9,9 +9,129 @@
 
   </head>
   <body>
+<!-- MAIN HEADER
+    ======================= -->
+    <header class="main-header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">perfect<span>CV</span></a>
+        <button class="hamburger menu-toggle" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <!-- /main header -->
+
+    <!-- HERO SECTION
+    ======================= -->
+    <section class="jumbo">
+
+      <figure class="jumbo-img__holder">
+        <img src="img/home-header.jpg" alt="" class="jumbo-img">
+      </figure>
+
+      <div class="container">
+        <div class="jumbo-content">
+          <h1 class="jumbo-title">perfect<span>CV</span></h1>
+          <h2 class="jumbo-subtitle">Lorem ipsum dolor, sit amet consect adipisicing elit. Beatae, eaque!</h2>
+          <a href="#" class="btn btn-main">Try it out!</a>
+        </div>
+      </div>
+    </section>
+    <!-- /hero section -->
+    <section class="intro steps slanted-full--dark">
+
+      <div class="section-header section-header--center">
+        <h2 class="section-title">How it works</h2>
+      </div>
+
+      <div class="container p-lg-0">
+        <div class="steps-holder nav">
+          <div class="step">
+            <span class="step-number">
+              <span>1</span>
+            </span>
+
+            <span class="step-text">
+              <a id="tab1-tab" data-toggle="tab" href="#step-1" role="tab" aria-controls="step-1">
+                <span>Input data</span>
+              </a>
+            </span>
+          </div>
+
+          <div class="step">
+            <span class="step-number">
+              <span>2</span>
+            </span>
+
+            <span class="step-text">
+              <a id="tab2-tab" data-toggle="tab" href="#step-2" role="tab" aria-controls="step-2">
+                <span>Choose design</span>
+              </a>
+            </span>
+          </div>
+
+          <div class="step">
+            <span class="step-number">
+              <span>3</span>
+            </span>
+
+            <span class="step-text">
+              <a id="tab3-tab" data-toggle="tab" href="#step-3" role="tab" aria-controls="step-3">
+                <span>Export CV</span>
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 offset-1">
+
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+                <h3 class="step-subtitle">First step title</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, consequuntur nulla! Quasi minus tenetur ut doloremque? Ex fugiat illo adipisci dolores quaerat soluta sapiente, consectetur odit nulla maiores delectus ipsum?</p>
+
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, repellat.</p>
+              </div>
+              <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                <h3 class="step-subtitle">Second step title</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, consequuntur nulla! Quasi minus tenetur ut doloremque? Ex fugiat illo adipisci dolores quaerat soluta sapiente, consectetur odit nulla maiores delectus ipsum?</p>
+              </div>
+              <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+                <h3 class="step-subtitle">Final step title</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas provident facilis voluptatem porro reiciendis, veritatis deserunt id, optio ea minima assumenda sed sequi magni rem. Dolore mollitia ipsam impedit quisquam.</p>
+
+                <a href="#" class="btn btn-main">Try it out!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+.btn {
+    font-size: rem(20);
+    @include prefixer(transition, all 0.2s ease-in-out, ('moz', 'webkit'));
+    min-width: rem(150);
+}
+
+.btn-main {
+    border: 2px solid $blue;
+
+    &:hover {
+        background: $blue;
+        color: $white;
+    }
+}
