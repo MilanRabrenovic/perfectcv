@@ -1,0 +1,72 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: none;
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+    font-size: 100%;
+
+    @include min-screen(1340px) {
+        font-size: 100% !important;
+    }
+
+    @include screen(801px,1023px) {
+        font-size: 90% !important;
+    }
+
+    @include screen(768px,800px) {
+        font-size: 87% !important;
+    }
+
+    @include screen(640px,767px) {
+        font-size: 85% !important;
+    }
+
+    @include screen(600px,639px) {
+        font-size: 82% !important;
+    }
+
+    @include screen(480px,599px) {
+        font-size: 80% !important;
+    }
+
+    @include screen(375px,479px) {
+        font-size: 75% !important;
+    }
+
+    @include max-screen(374px) {
+        font-size: 73% !important;
+    }
+}
+
+body {
+    color: #000;
+    line-height: 1.5;
+    font-size: rem(16);
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+address {
+    margin: 0;
+}
+
+
