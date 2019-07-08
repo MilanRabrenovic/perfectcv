@@ -16,7 +16,7 @@
     }
     &-title {
         font-family: $primary-font-700;
-        font-size: rem(50);
+        font-size: rem(60);
         line-height: 1;
         color: $text-dark-color;
         text-transform: lowercase;
@@ -56,7 +56,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 50px;
+    margin: 0;
 }
 
 .jumbo-img {
@@ -182,7 +182,7 @@ $arrow-lenght-xs: 44%;
         }
 
         .step-number {
-            border-right-color: #eef8ff;
+            border-right-color: $blue;
             > span {
                 background: #eef8ff;
             }
@@ -198,7 +198,7 @@ $arrow-lenght-xs: 44%;
         }
 
         .step-number {
-            border-right-color: #78caff;
+            border-right-color: $blue;
             > span {
                 background: #78caff;
             }
@@ -295,11 +295,11 @@ $arrow-lenght-xs: 44%;
         bottom: 0;
         right: 0;
         left: 0;
-        border: 10px solid $dark-bg;
+        border: 10px solid $white;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        color: $dark-bg;
+        color: $text-dark-color;
         border-radius: 100%;
         font-size: 48px;
         font-family: $primary-font-400;
@@ -319,7 +319,7 @@ $arrow-lenght-xs: 44%;
     font-family: $primary-font-400;
     font-size: 31px;
     display: flex;
-    color: $text-light-color;
+    color: $text-dark-color;
 
     @include max-screen(1199px) {
         font-size: get-vw(31px)*1.5;
@@ -336,7 +336,7 @@ $arrow-lenght-xs: 44%;
     }
 
     a, span {
-        color: $text-light-color;
+        color: $text-dark-color;
         display: block;
     }
 
@@ -371,7 +371,7 @@ $arrow-lenght-xs: 44%;
     }
 }
 .step-subtitle {
-    color: $text-light-color;
+    color: $text-dark-color;
     margin-bottom: rem(30);
     font-size: rem(30);
     font-family: $primary-font-300;
@@ -379,8 +379,150 @@ $arrow-lenght-xs: 44%;
 
 .tab-pane {
     .text {
-        color: $text-light-color;
+        color: $text-dark-color;
         font-size: rem(18);
         font-family: $primary-font-300;
+    }
+}
+
+.tab-content {
+    .btn-holder {
+        padding-top: rem(40);
+        text-align: center;
+    }
+}
+.design-preview {
+    padding-top: 88%;
+    position: relative;
+    margin: 0;
+
+    > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    img {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+// showcase
+
+.showcase {
+    padding-top: rem(100);
+    overflow: hidden;
+}
+
+.showcase-img__holder {
+    margin: 0;
+
+    span {
+        display: block;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+    }
+}
+
+.showcase-img {
+    display: block;
+}
+
+// pricing
+.pricing {
+    padding-bottom: rem(50);
+}
+
+.pricing-card {
+    background: $white;
+    border-radius: 6px;
+    height: 100%;
+    text-align: center;
+    padding: rem(25 50);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &.premium {
+        border: 1px solid $blue;
+        @include prefixer(transform, scale(1.1), ('moz', 'webkit'));
+
+        .pricing-card__price {
+            border-color: $blue;
+        }
+
+        li {
+            span {
+                color: $blue;
+            }
+        }
+    }
+
+    .premium-badge {
+        background: $blue;
+        color: $white;
+        display: block;
+        padding: 5px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        top: rem(80);
+        right: 0;
+        min-width: rem(170);
+        @include prefixer(transform, rotate(45deg), ('moz', 'webkit'));
+        transform-origin: 100% 100%;
+        font-family: $primary-font-700;
+    }
+
+    .btn-holder {
+        margin-top: auto;
+    }
+}
+
+
+
+.pricing-card__price {
+    width: rem(150px);
+    height: rem(150px);
+    border: rem(10) solid $light-bg;
+    border-radius: 100%;
+    display: flex;
+    margin: 0 auto rem(30) auto;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+        > span {
+            font-size: rem(60);
+            line-height: 1.2;
+        }
+
+        > sup {
+            display: block;
+            line-height: 1;
+        }
+    }
+}
+
+.pricing-card__list {
+    text-align: left;
+
+    li {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+            display: inline-block;
+            margin-right: 5px;
+        }
     }
 }

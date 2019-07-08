@@ -12,3 +12,14 @@
         color: $white;
     }
 }
+
+.btn-second {
+    border: 2px solid $text-dark-color;
+    background: transparent;
+    color: $text-dark-color;
+
+    &:hover {
+        background: $text-dark-color;
+        color: $white;
+    }
+}

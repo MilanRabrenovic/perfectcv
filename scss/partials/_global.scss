@@ -1,8 +1,8 @@
 body {
     color: $text-dark-color;
     line-height: 1.5;
-    font-size: rem(16);
-    font-family: $primary-font-400, sans-serif;
+    font-size: rem(18);
+    font-family: $primary-font-300, sans-serif;
 }
 
 a {
@@ -40,7 +40,15 @@ a {
     .section-title {
         color: $text-light-color;
     }
+}
+.slanted-top--light {
+    background: $light-bg;
+    @include angled-edge("outside top", "upper left", $light-bg);
 
+    &:before {
+        height: get-vw(240px);
+        top: get-vw(-240px);
+    }
 }
 
 .section-header {
